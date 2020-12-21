@@ -1,0 +1,50 @@
+.chart {
+    padding: 20px;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 250px;
+    max-width: 782px;
+}
+@media(max-width:992px){
+    .chart{
+        margin-left: 0;
+        text-align: center;
+        padding: 0;
+    }
+    .barchart{
+        margin: 0;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.chart_button{
+    text-align: right;
+    background: none;
+}
+.chart p {
+    background: none;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+.chartbutton {
+    background-color: rgba(0, 0, 128,0.8);
+    border-radius: 10px 10px 10px 10px;
+    height: 30px;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  
+  

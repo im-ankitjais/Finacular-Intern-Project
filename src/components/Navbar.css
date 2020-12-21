@@ -1,0 +1,229 @@
+.navbar-top {
+    background-color: #ffffff;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+  }
+  
+  .menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+  }
+
+  .menu-icons {
+    margin: 65%;
+    font-size: 1.5rem;
+    background: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  .menu_icon{
+    background: none;
+    margin-right: 20px;
+  }
+  .menu-bar-down {
+    margin-left: 2rem;
+    font-size: 1rem;
+    background: none;
+  }
+
+  .menu-bar-active {
+    margin-left: 2.5rem;
+    font-size: 2rem;
+    background: none;
+  }
+
+  .menu-bar-img {
+    margin-left: 1rem;
+    height: 4rem;
+    background: none;
+  }
+  .user-img {
+    margin-left: 1rem;
+    height: 3rem;
+    background: none;
+    border-radius:50% 50% 50% 50%;  
+    border: 1.5px solid blue;
+  }
+  .span1 {
+    margin-left: 6px;
+    font-size: 1.2rem;
+    background: none;
+
+  }
+ 
+  .nav-menu {
+    background-color: #ffffff;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -100%;
+    overflow: hidden;
+    -webkit-box-pack: justify;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+    transition: 850ms;
+  }
+
+  .nav-menu-right {
+    background-color: #fff;
+    width: 250px;
+    height: 100vh;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+    transition: 850ms;
+  }
+  @media(max-width:992px){
+    .nav-menu-right{
+      display: none;
+    }
+  }
+  .nav-menu.active {
+    left: 0;
+    transition: 350ms;
+
+  }
+  
+  .nav-text {
+    background: none;
+    color: rgba(0, 0, 128,0.8) ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+  }
+  
+  .nav-text a {
+    background-color: #ffffff;
+    text-decoration: none;
+    color: rgba(0, 0, 128,0.8);
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+    
+  }
+
+  
+  
+  
+  .nav-text a:hover {
+    background-color: rgba(0, 0, 128,0.8);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+  }
+
+  .text-active a {
+    background-color: #ffffff;
+    text-decoration: none;
+    color: rgba(0, 0, 128,0.8);
+    font-size: 18px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+  }
+  .nav-menu-items {
+    width: 100%;
+    background-color: #ffffff;
+    
+  }
+  
+  .navbar-toggle {
+    background-color: #ffffff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
+  .navbar-user {
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+
+
+
+  }
+  
+  .span2 {
+    margin-left: 16px;
+    background: none;
+
+  }
+
+  .button-nav {
+    background-color: rgba(0, 0, 128,0.8);
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    color: white;
+    padding: 23px 50px;
+    text-decoration: none;
+    display: flex;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+  .menu-item-right {
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .menu-item-right2 {
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+
+  }
+
+  .button2 {
+    background-color: rgba(0, 0, 128,0.8);
+    border-radius: 10px 10px 10px 10px;
+    height: 40px;
+    border: none;
+    color: white;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .img1 {
+    align-items: center;
+    width: 70%;
+  }

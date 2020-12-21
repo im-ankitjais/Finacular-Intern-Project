@@ -1,0 +1,36 @@
+
+.center-button {
+    /* margin-left: 28%; */
+    /* align-items: center;
+    justify-content: center;
+    display: flex; */
+    padding-right: 10%;
+}
+
+.input-form-10{
+    /* padding-left: 10%; */
+    /* padding-top: 10%; */
+    height: 12.4vh;
+    overflow: visible;
+    
+    
+}
+.input-form{
+    
+    margin-bottom: 20px;
+    /* padding-left: %; */
+    /* padding-top: 2%; */
+    /* padding-top:2%; */
+}
+
+.but{
+    padding: 20px !important;
+    width: 170px;
+    background-color: rgba(0, 0, 128,0.8) !important;
+}
+.he{
+    background-color: inherit;
+}
+.hei{
+    height: auto !important;
+}
