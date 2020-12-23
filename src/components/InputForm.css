@@ -21,16 +21,20 @@
     /* padding-left: %; */
     /* padding-top: 2%; */
     /* padding-top:2%; */
+    background-color: #ffffff;
 }
 
 .but{
     padding: 20px !important;
     width: 170px;
-    background-color: rgba(0, 0, 128,0.8) !important;
+    background-color: #020b8d !important;
 }
 .he{
     background-color: inherit;
 }
 .hei{
     height: auto !important;
+}
+.segment{
+    background: inherit !important;
 }

@@ -47,7 +47,7 @@
     height: 3rem;
     background: none;
     border-radius:50% 50% 50% 50%;  
-    border: 1.5px solid blue;
+    border: 1.5px solid #020b8d;
   }
   .span1 {
     margin-left: 6px;
@@ -73,8 +73,8 @@
   }
 
   .nav-menu-right {
-    background-color: #fff;
-    width: 250px;
+    background-color: #ffffff;
+    width: 175px;
     height: 100vh;
     align-items: center;
     position: fixed;
@@ -96,7 +96,7 @@
   
   .nav-text {
     background: none;
-    color: rgba(0, 0, 128,0.8) ;
+    color: #020b8d ;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -108,7 +108,7 @@
   .nav-text a {
     background-color: #ffffff;
     text-decoration: none;
-    color: rgba(0, 0, 128,0.8);
+    color: #020b8d;
     font-size: 18px;
     width: 95%;
     height: 100%;
@@ -123,7 +123,7 @@
   
   
   .nav-text a:hover {
-    background-color: rgba(0, 0, 128,0.8);
+    background-color: #020b8d;
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
@@ -138,7 +138,7 @@
   .text-active a {
     background-color: #ffffff;
     text-decoration: none;
-    color: rgba(0, 0, 128,0.8);
+    color: #020b8d;
     font-size: 18px;
     width: 95%;
     display: flex;
@@ -181,7 +181,7 @@
   }
 
   .button-nav {
-    background-color: rgba(0, 0, 128,0.8);
+    background-color:#020b8d;
     border-radius: 10px 10px 10px 10px;
     border: none;
     color: white;
@@ -208,7 +208,7 @@
   }
 
   .button2 {
-    background-color: rgba(0, 0, 128,0.8);
+    background-color: #020b8d;
     border-radius: 10px 10px 10px 10px;
     height: 40px;
     border: none;

@@ -2,201 +2,222 @@ import {useState,createContext} from 'react'
 
 export const ChartContext = createContext();
 
+
 export const ChartProvider = (props) => {
+
+      const getData  = (canvas) => {
+      const ctx = canvas.getContext("2d")
+      var gradient = ctx.createLinearGradient(0,250,0,0);
+      gradient.addColorStop(0, 'rgb(54, 162, 235)');
+      gradient.addColorStop(0.4,'#0d53b7');
+      gradient.addColorStop(1, '#21209c');
+      return {
+         color:gradient
+      }
+   }
+
+      const canvas = document.createElement('canvas');
+      const gradient_color = getData(canvas);
+      
+
     const [chartData, setChartData] = useState({
-      data1 : [
-        {
-           Noofyears : 1,  amt: 100,
-        },
-        {
-           Noofyears : 2, amt: 175,
-        },
-        {
-           Noofyears : 3, amt: 130,
-        },
-        {
-           Noofyears : 4, amt: 375,
-        },
-        {
-           Noofyears : 5, amt: 500,
-        },
-        {
-           Noofyears : 6, amt: 575,
-        },
-        {
-           Noofyears : 7, amt: 650,
-        },
-        {
-            Noofyears : 8, amt: 775,
-        },
-        {
-             Noofyears : 9, amt: 440,
-        },
-        {
-            Noofyears : 10, amt: 950,
-        }
-      ],
-
-      data2 : [
-        {
-            Noofyears : 1,  amt: 550,
-         },
-         {
-            Noofyears : 2, amt: 890,
-         },
-         {
-            Noofyears : 3, amt: 456,
-         },
-         {
-            Noofyears : 4, amt: 780,
-         },
-         {
-            Noofyears : 5, amt: 500,
-         },
-         {
-            Noofyears : 6, amt: 575,
-         },
-         {
-            Noofyears : 7, amt: 650,
-         },
-         {
-             Noofyears : 8, amt: 775,
-         },
-         {
-              Noofyears : 9, amt: 850,
-         },
-         {
-             Noofyears : 10, amt: 950,
-         },
-        {
-           Noofyears : 11,  amt: 300,
-        },
-        {
-           Noofyears : 12, amt: 400,
-        },
-        {
-           Noofyears : 13, amt: 600,
-        },
-        {
-           Noofyears : 14, amt: 780,
-        },
-        {
-           Noofyears : 15, amt: 490,
-        },
-        {
-           Noofyears : 16, amt: 900,
-        },
-        {
-           Noofyears : 17, amt: 650,
-        },
-        {
-             Noofyears : 18, amt: 775,
-        },
-        {
-             Noofyears : 19, amt: 850,
-        },
-        {
-             Noofyears : 20, amt: 950,
-        }
-      ],
-
-      data3 : [
-        {
-            Noofyears : 1,  amt: 670,
-         },
-         {
-            Noofyears : 2, amt: 470,
-         },
-         {
-            Noofyears : 3, amt: 670,
-         },
-         {
-            Noofyears : 4, amt: 678,
-         },
-         {
-            Noofyears : 5, amt: 800,
-         },
-         {
-            Noofyears : 6, amt: 350,
-         },
-         {
-            Noofyears : 7, amt: 440,
-         },
-         {
-             Noofyears : 8, amt: 200,
-         },
-         {
-              Noofyears : 9, amt: 850,
-         },
-         {
-             Noofyears : 10, amt: 950,
-         },
-        {
-           Noofyears : 11,  amt: 600,
-        },
-        {
-           Noofyears : 12, amt: 700,
-        },
-        {
-           Noofyears : 13, amt: 450,
-        },
-        {
-           Noofyears : 14, amt: 375,
-        },
-        {
-           Noofyears : 15, amt: 500,
-        },
-        {
-           Noofyears : 16, amt: 575,
-        },
-        {
-           Noofyears : 17, amt: 650,
-        },
-        {
-             Noofyears : 18, amt: 775,
-        },
-        {
-             Noofyears : 19, amt: 850,
-        },
-        {
-             Noofyears : 20, amt: 950,
-        },
-        {
-           Noofyears : 21,  amt: 700,
-        },
-        {
-           Noofyears : 22, amt: 900,
-        },
-        {
-           Noofyears : 23, amt: 600,
-        },
-        {
-           Noofyears : 24, amt: 580,
-        },
-        {
-           Noofyears : 25, amt: 500,
-        },
-        {
-           Noofyears : 26, amt: 575,
-        },
-        {
-           Noofyears : 27, amt: 650,
-        },
-        {
-             Noofyears : 28, amt: 775,
-        },
-        {
-             Noofyears : 29, amt: 400,
-        },
-        {
-             Noofyears : 30, amt: 790,
-        }
-      ]
+      chartData1:{
+         labels: ['1','2','3','4','5','6','7','8','9','10'],
+         datasets:[
+           {
+             label:'Asset Balance (In Lakhs)',
+             data:[
+               350,
+               476,
+               344,
+               386,
+               550,
+               450,
+               320,
+               360,
+               508,
+               580
+             ],
+             backgroundColor:gradient_color.color
+           }
+         ]
+       },
+       chartData2:{
+         labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','18','19','20'],
+         datasets:[
+           {
+             label:'Asset Balance (In Lakhs)',
+             data:[
+              350,
+              196,
+              244,
+              386,
+              550,
+              450,
+              320,
+              360,
+              508,
+              680,
+              546,
+               255,
+               364,
+               276,
+               654,
+               450,
+               320,
+               748,
+               382,
+               294
+             ],
+             backgroundColor:gradient_color.color
+           }
+         ]
+       },
+       chartData3:{
+         labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','18','19','20','21','22','23','24','25','26','27','28','29','30'],
+         datasets:[
+           {
+             label:'Asset Balance (In Lakhs)',
+             data:[
+              350,
+              196,
+              244,
+              386,
+              550,
+              450,
+              320,
+              360,
+              508,
+              680,
+              546,
+               255,
+               364,
+               276,
+               654,
+               450,
+               320,
+               748,
+               382,
+               294,
+               523,
+               543,
+               324,
+               124,
+               532,
+               321,
+               432,
+               233,
+               421,
+               532
+             ],
+             backgroundColor:gradient_color.color
+           }
+         ]
+       }
     })
 
+
+   const inputSet = (...data) => {
+    setChartData({
+      
+      chartData1:{
+          labels: ['1','2','3','4','5','6','7','8','9','10'],
+          datasets:[
+              {
+                  label:'Asset Balance (In Lakhs)',
+                  data:[
+                      data[0],
+                      data[1],
+                      data[2],
+                      data[3],
+                      data[4],
+                      data[5],
+                      data[6],
+                      data[7],
+                      data[8],
+                      data[9]
+                  ],
+                  backgroundColor:gradient_color.color    
+     }
+   ]
+  },
+  chartData2:{
+    labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','18','19','20'],
+    datasets:[
+      {
+        label:'Asset Balance (In Lakhs)',
+        data:[
+          data[0],
+                      data[1],
+                      data[2],
+                      data[3],
+                      data[4],
+                      data[5],
+                      data[6],
+                      data[7],
+                      data[8],
+                      data[9],
+          546,
+           255,
+           364,
+           276,
+           654,
+           450,
+           320,
+           748,
+           382,
+           294
+         ],
+        backgroundColor:gradient_color.color
+      }
+    ]
+  },
+  chartData3:{
+    labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','18','19','20','21','22','23','24','25','26','27','28','29','30'],
+    datasets:[
+      {
+        label:'Asset Balance (In Lakhs)',
+        data:[
+          data[0],
+                      data[1],
+                      data[2],
+                      data[3],
+                      data[4],
+                      data[5],
+                      data[6],
+                      data[7],
+                      data[8],
+                      data[9],
+          546,
+           255,
+           364,
+           276,
+           654,
+           450,
+           320,
+           748,
+           382,
+           294,
+           523,
+           543,
+           324,
+           124,
+           532,
+           321,
+           432,
+           233,
+           421,
+           532
+         ],
+        backgroundColor:gradient_color.color
+      }
+    ]
+  }          
+  })
   
+}
     return(
-        <ChartContext.Provider value={{chartData, setChartData}}>
+        <ChartContext.Provider value={{chartData, inputSet}}>
             {props.children}
         </ChartContext.Provider>
     )

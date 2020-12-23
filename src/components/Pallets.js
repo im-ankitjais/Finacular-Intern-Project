@@ -10,6 +10,8 @@ import icon4 from "../assets/bill.svg"
 const Pallets = () =>{
     return(
         <div className="d-lg-flex pallet">
+            <div className="col-12 col-lg-8">
+            <div className="four-box d-lg-flex pallet">
             <Pallet
             dataHead='Asset Balance'
             dataTitle='Enter Amount:'
@@ -17,6 +19,7 @@ const Pallets = () =>{
             dataUpdate='Last Updated: '
             dataDate='3 Dec'
             dataImg={icon1}
+            classObject="one"
              />
              <Pallet
             dataHead='Growth Rate'
@@ -25,6 +28,7 @@ const Pallets = () =>{
             dataUpdate='Inflation: '
             dataDate='6%'
             dataImg={icon2}
+            classObject="one"
              />
              <Pallet
             dataHead='Major Investments'
@@ -33,6 +37,7 @@ const Pallets = () =>{
             dataUpdate='Last Updated: '
             dataDate='3 Dec'
             dataImg={icon3}
+            classObject="one"
              />
              <Pallet
             dataHead='Finincial Independence'
@@ -41,7 +46,11 @@ const Pallets = () =>{
             dataUpdate='Optimized:'
             dataDate='Yes/No'
             dataImg={icon4}
+            classObject="one"
              />
+             </div>
+             </div>
+             <div className="col-12 col-lg-4">
              <Pallet
             dataHead='Average Expenses'
             dataTitle='Amount:'
@@ -49,7 +58,9 @@ const Pallets = () =>{
             dataUpdate='3 months average: '
             dataDate='6%'
             dataImg={icon5}
+            classObject="two"
              />
+             </div>
         </div>
     )
 }

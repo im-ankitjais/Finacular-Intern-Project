@@ -1,7 +1,7 @@
 .pallet{
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .head{
     justify-content: space-between;
@@ -12,7 +12,7 @@
     line-height: 45px;
 }
 .head_head{
-    color: rgba(0, 0, 128,0.8);
+    color: #020b8d;
     font-weight: 600;
     padding: 10px;
 }
@@ -33,4 +33,7 @@
 }
 .head_img{
     width: 100%;
+}
+.two_pallet{
+    height: 95%;
 }

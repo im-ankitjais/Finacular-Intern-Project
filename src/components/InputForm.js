@@ -2,74 +2,44 @@ import React, { useState, useContext } from 'react';
 import './InputForm.css';
 import {ChartContext} from '../context/ChartContext'
 
-const InputForm = ({setData}) => {
+const InputForm = ({setyr}) => {
 
-    const {chartData,setChartData} = useContext(ChartContext);
+    const {chartData,inputSet} = useContext(ChartContext);
 
 
-    const [inputData2, setInputData2] = useState(0);
-    const [inputData1, setInputData1] = useState(0);
-    const [inputData3, setInputData3] = useState(0);
-    const [inputData4, setInputData4] = useState(0);
-    const [inputData5, setInputData5] = useState(0);
-    const [inputData6, setInputData6] = useState(0);
-    const [inputData7, setInputData7] = useState(0);
-    const [inputData8, setInputData8] = useState(0);
-    const [inputData9, setInputData9] = useState(0);
-    const [inputData10, setInputData10] = useState(0);
+    const [inputData2, setInputData2] = useState();
+    const [inputData1, setInputData1] = useState();
+    const [inputData3, setInputData3] = useState();
+    const [inputData4, setInputData4] = useState();
+    const [inputData5, setInputData5] = useState();
+    const [inputData6, setInputData6] = useState();
+    const [inputData7, setInputData7] = useState();
+    const [inputData8, setInputData8] = useState();
+    const [inputData9, setInputData9] = useState();
+    const [inputData10, setInputData10] = useState();
 
     const onFormSubmit =(e)=>{
         e.preventDefault();
-        setChartData(prevState =>({
-            data2:[
-                ...prevState.data2
-            ],
-            data3:[
-                ...prevState.data3
-            ],
-            data1:[
-                {
-                    Noofyears : 1,  amt: inputData1,
-                 },
-                 {
-                    Noofyears : 2, amt: inputData2,
-                 },
-                 {
-                    Noofyears : 3, amt: inputData3,
-                 },
-                 {
-                    Noofyears : 4, amt: inputData4,
-                 },
-                 {
-                    Noofyears : 5, amt: inputData5,
-                 },
-                 {
-                    Noofyears : 6, amt: inputData6,
-                 },
-                 {
-                    Noofyears : 7, amt: inputData7,
-                 },
-                 {
-                     Noofyears : 8, amt: inputData8,
-                 },
-                 {
-                      Noofyears : 9, amt: inputData9,
-                 },
-                 {
-                     Noofyears : 10, amt: inputData10,
-                 }
-            ]   
-                  
-        })
+        inputSet(
+                    inputData1,
+                    inputData2,
+                    inputData3,
+                    inputData4,
+                    inputData5,
+                    inputData6,
+                    inputData7,
+                    inputData8,
+                    inputData9,
+                    inputData10,
         )
-        setData();
-        console.log(chartData.data1);
+        setyr();
+        console.log(chartData.chartData1);
     }
 
     
     return (
-        <div onSubmit={onFormSubmit} className="input-form ">
-            <div className="ui placeholder segment">
+        <div onSubmit={onFormSubmit} className="input-form">
+            <div className="ui placeholder segment shadow p-2 mb-3 bg-white rounded">
                 
                 <h2 className="ui header he"><i class="plus square outline icon"></i>Enter 10yrs amount to render the chart:</h2>
             
